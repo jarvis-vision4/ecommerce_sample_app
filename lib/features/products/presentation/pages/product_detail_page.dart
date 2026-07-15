@@ -91,9 +91,10 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                 color: colorScheme.surface.withValues(alpha: 0.9),
                 shape: BoxShape.circle,
               ),
-              child: IconButton(
-                icon: const Icon(Icons.arrow_back),
-                onPressed: () => context.pop(),
+
+              child: InkWell(
+                child: const Icon(Icons.arrow_back),
+                onTap: () => context.pop(),
               ),
             ),
             actions: [
@@ -103,11 +104,18 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                   color: colorScheme.surface.withValues(alpha: 0.9),
                   shape: BoxShape.circle,
                 ),
-                child: IconButton(
-                  icon: Icon(
+                // child: IconButton(
+                //   icon: Icon(
+                //       _isInWishlist ? Icons.favorite : Icons.favorite_border,
+                //       color: _isInWishlist ? colorScheme.error : null),
+                //   onPressed: () =>
+                //       setState(() => _isInWishlist = !_isInWishlist),
+                // ),
+                child: InkWell(
+                  child: Icon(
                       _isInWishlist ? Icons.favorite : Icons.favorite_border,
                       color: _isInWishlist ? colorScheme.error : null),
-                  onPressed: () =>
+                  onTap: () =>
                       setState(() => _isInWishlist = !_isInWishlist),
                 ),
               ),
@@ -407,6 +415,7 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
         child: SafeArea(
           top: false,
           child: Row(
+            mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
                 child: GhostButton(
@@ -415,22 +424,22 @@ class _ProductDetailPageState extends ConsumerState<ProductDetailPage> {
                       _isInWishlist ? Icons.favorite : Icons.favorite_border,
                   onPressed: () =>
                       setState(() => _isInWishlist = !_isInWishlist),
-                  size: ButtonSize.lg,
+                  size: ButtonSize.md,
                 ),
               ),
-              SizedBox(width: customSpacing.md),
+              SizedBox(width: customSpacing.xs),
               Expanded(
-                flex: 2,
                 child: PrimaryButton(
                   label: 'Add to Cart',
                   onPressed: _addToCart,
-                  size: ButtonSize.lg,
+                  size: ButtonSize.md,
                   leadingIcon: Icons.add_shopping_cart_outlined,
                 ),
               ),
             ],
           ),
         ),
+
       ),
     );
   }

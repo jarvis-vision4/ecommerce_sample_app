@@ -12,7 +12,7 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/shopping_cart.png) | ![Profile](screenshots/profile.png) |
 
-| Login | Register | Forgot Password | Reset Sent |
+| Login | Register | Reset Sent | Forgot Password |
 |:---:|:---:|:---:|:---:|
 | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) |
 
@@ -58,7 +58,7 @@ lib/
 │   ├── storage/                       # Hive, SharedPreferences, SecureStorage
 │   └── theme/                         # Design tokens + ThemeData builder
 ├── features/                          # 11 feature modules
-│   └── {feature}/presentation/pages/  # One page file per screen
+│   └── {feature}/{presentation}{data}{domain}/pages/  # One page file per screen
 └── shared/
     ├── models/                        # ~40 domain model classes
     └── widgets/                       # Reusable UI components + bottom nav shell

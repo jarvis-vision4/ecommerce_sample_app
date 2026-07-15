@@ -7,7 +7,7 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 ---
 
 ## Screenshots
-
+(IPhone - 16 Pro)
 | Home | Search | Wishlist | Profile |
 |:---:|:---:|:---:|:---:|
 | ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/wishlist.png) | ![Profile](screenshots/profile.png) |

@@ -12,7 +12,7 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/wishlist.png) | ![Profile](screenshots/profile.png) |
 
-| Login | Register | Forgot Password | Reset Sent | Notifications |
+| Login | Register | Forgot Password | Reset Sent | 
 |:---:|:---:|:---:|:---:|:---:|
 | ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) 
 
@@ -24,7 +24,7 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Product Grid](screenshots/product_grid.png) | ![Product List](screenshots/product_list.png) | ![Product Detail](screenshots/product_details.png) | ![Orders](screenshots/orders.png) |
 
-| Cart (filled) | Cart (empty) |
+| Cart (filled) | Cart (empty) | Notifications |
 |:---:|:---:|
 | ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) | ![Notifications](screenshots/notification.png) |
 

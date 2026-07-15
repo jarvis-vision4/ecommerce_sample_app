@@ -231,24 +231,58 @@ class OrderDetailPage extends ConsumerWidget {
                   if (status == 'delivered') ...[
                     Row(
                       children: [
-                        Expanded(child: SecondaryButton(label: 'Buy Again', onPressed: () {}, size: ButtonSize.lg, leadingIcon: Icons.refresh)),
+                        Flexible(
+                          child: SecondaryButton(
+                            label: 'Buy Again',
+                            onPressed: () {},
+                            size: ButtonSize.lg,
+                            leadingIcon: Icons.refresh,
+                          ),
+                        ),
                         SizedBox(width: customSpacing.md),
-                        Expanded(child: PrimaryButton(label: 'Write Review', onPressed: () {}, size: ButtonSize.lg, leadingIcon: Icons.rate_review)),
+                        Flexible(
+                          child: PrimaryButton(
+                            label: 'Write Review',
+                            onPressed: () {},
+                            size: ButtonSize.lg,
+                            leadingIcon: Icons.rate_review,
+                          ),
+                        ),
                       ],
                     ),
+
                     SizedBox(height: customSpacing.md),
+
                     Row(
                       children: [
-                        Expanded(child: GhostButton(label: 'Return Item', onPressed: () {}, size: ButtonSize.lg, leadingIcon: Icons.assignment_return)),
+                        Flexible(
+                          child: GhostButton(
+                            label: 'Return Item',
+                            onPressed: () {},
+                            size: ButtonSize.lg,
+                            leadingIcon: Icons.assignment_return,
+                          ),
+                        ),
                         SizedBox(width: customSpacing.md),
-                        Expanded(child: GhostButton(label: 'Track Package', onPressed: () {}, size: ButtonSize.lg, leadingIcon: Icons.local_shipping)),
+                        Flexible(
+                          child: GhostButton(
+                            label: 'Track Package',
+                            onPressed: () {},
+                            size: ButtonSize.lg,
+                            leadingIcon: Icons.local_shipping,
+                          ),
+                        ),
                       ],
                     ),
                   ] else if (status == 'shipped') ...[
-                    Row(
-                      children: [
-                        Expanded(child: PrimaryButton(label: 'Track Package', onPressed: () {}, size: ButtonSize.lg, leadingIcon: Icons.local_shipping)),
-                      ],
+                    SizedBox(
+                      width: double.infinity,
+                      child: PrimaryButton(
+                        label: 'Track Package',
+                        onPressed: () {},
+                        size: ButtonSize.lg,
+                        leadingIcon: Icons.local_shipping,
+                      ),
                     ),
                   ],
                 ],

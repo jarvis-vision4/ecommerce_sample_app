@@ -70,14 +70,24 @@ class PrimaryButton extends StatelessWidget {
 
     return SizedBox(
       width: isFullWidth ? double.infinity : null,
-      height: height,
+      height:64,
       child: FilledButton(
         onPressed: isLoading ? null : onPressed,
-        style: FilledButton.styleFrom(
-          padding: EdgeInsets.symmetric(
-              horizontal: horizontalPadding, vertical: verticalPadding),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(customRadius.md),
+        style: ButtonStyle(
+          backgroundColor: WidgetStateProperty.all(
+            const Color(0xff23446D),
+          ),
+          foregroundColor: WidgetStateProperty.all(
+            Colors.white,
+          ),
+          padding: WidgetStateProperty.all(
+            EdgeInsets.symmetric(
+                horizontal: horizontalPadding, vertical: verticalPadding),
+          ),
+          shape: WidgetStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(customRadius.md),
+            ),
           ),
         ),
         child: isLoading
@@ -100,10 +110,11 @@ class PrimaryButton extends StatelessWidget {
                   ],
                   Text(
                     label,
-                    style: TextStyle(
-                        fontSize: fontSize,
-                        fontWeight: FontWeight.w600,
-                        color: colorScheme.onPrimary),
+                    style: theme.textTheme.displayMedium?.copyWith(
+                      fontSize: fontSize,
+                      color: colorScheme.onPrimary,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                   if (trailingIcon != null) ...[
                     SizedBox(width: customSpacing.sm),
@@ -183,7 +194,7 @@ class SecondaryButton extends StatelessWidget {
 
     return SizedBox(
       width: isFullWidth ? double.infinity : null,
-      height: height,
+      height: 65,
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
@@ -211,7 +222,9 @@ class SecondaryButton extends StatelessWidget {
               style: TextStyle(
                   fontSize: fontSize,
                   fontWeight: FontWeight.w600,
-                  color: textColor ?? colorScheme.primary),
+                  color: textColor ?? colorScheme.primary
+              ),
+
             ),
             if (trailingIcon != null) ...[
               SizedBox(width: customSpacing.sm),

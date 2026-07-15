@@ -223,49 +223,86 @@ class _OrderCard extends StatelessWidget {
             Divider(height: 1, color: colorScheme.outlineVariant),
             SizedBox(height: customSpacing.md),
             // Order summary
-            Row(
+            // Row(
+            //   children: [
+            //     Expanded(
+            //       child: Column(
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: [
+            //           Text('${order['items']} items', style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500)),
+            //           SizedBox(height: customSpacing.xs),
+            //           Text(
+            //             '\$${order['total'].toStringAsFixed(2)}',
+            //             style: theme.textTheme.titleMedium?.copyWith(
+            //               fontWeight: FontWeight.w700,
+            //               color: colorScheme.primary,
+            //             ),
+            //           ),
+            //         ],
+            //       ),
+            //     ),
+            //     // Actions
+            //     Wrap(
+            //       children: [
+            //         if (onTrack != null)
+            //           TextButton.icon(
+            //             onPressed: onTrack,
+            //             icon: const Icon(Icons.local_shipping_outlined, size: 18),
+            //             label: const Text('Track'),
+            //           ),
+            //         if (onReorder != null)
+            //           TextButton.icon(
+            //             onPressed: onReorder,
+            //             icon: const Icon(Icons.refresh, size: 18),
+            //             label: const Text('Reorder'),
+            //           ),
+            //         if (onReturn != null)
+            //           TextButton.icon(
+            //             onPressed: onReturn,
+            //             icon: const Icon(Icons.assignment_return_outlined, size: 18),
+            //             label: const Text('Return'),
+            //           ),
+            //       ],
+            //     ),
+            //   ],
+            // ),
+            Wrap(
+              alignment: WrapAlignment.spaceBetween,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('${order['items']} items', style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w500)),
-                      SizedBox(height: customSpacing.xs),
-                      Text(
-                        '\$${order['total'].toStringAsFixed(2)}',
-                        style: theme.textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.w700,
-                          color: colorScheme.primary,
-                        ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('${order['items']} items'),
+                    Text(
+                      '\$${order['total'].toStringAsFixed(2)}',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: colorScheme.primary,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                // Actions
+
                 Wrap(
+                  spacing: 4,
                   children: [
                     if (onTrack != null)
                       TextButton.icon(
                         onPressed: onTrack,
-                        icon: const Icon(Icons.local_shipping_outlined, size: 18),
+                        icon: const Icon(Icons.local_shipping_outlined),
                         label: const Text('Track'),
                       ),
                     if (onReorder != null)
                       TextButton.icon(
                         onPressed: onReorder,
-                        icon: const Icon(Icons.refresh, size: 18),
+                        icon: const Icon(Icons.refresh),
                         label: const Text('Reorder'),
-                      ),
-                    if (onReturn != null)
-                      TextButton.icon(
-                        onPressed: onReturn,
-                        icon: const Icon(Icons.assignment_return_outlined, size: 18),
-                        label: const Text('Return'),
                       ),
                   ],
                 ),
               ],
-            ),
+            )
           ],
         ),
       ),

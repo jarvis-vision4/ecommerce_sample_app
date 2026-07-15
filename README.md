@@ -58,7 +58,7 @@ lib/
 │   ├── storage/                       # Hive, SharedPreferences, SecureStorage
 │   └── theme/                         # Design tokens + ThemeData builder
 ├── features/                          # 11 feature modules
-│   └── {feature}/presentation/pages/  # One page file per screen
+│   └── {feature}/{presentation}{data}{domain}/pages/  # One page file per screen
 └── shared/
     ├── models/                        # ~40 domain model classes
     └── widgets/                       # Reusable UI components + bottom nav shell

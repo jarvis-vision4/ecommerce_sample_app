@@ -10,7 +10,7 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 (IPhone - 16 Pro)
 | Home | Search | Wishlist | Profile |
 |:---:|:---:|:---:|:---:|
-| ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/wishlist.png) | ![Profile](screenshots/profile.png) |
+| ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/shopping_cart.png) | ![Profile](screenshots/profile.png) |
 
 | Login | Register | Forgot Password | Reset Sent |
 |:---:|:---:|:---:|:---:|
@@ -24,9 +24,9 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Product Grid](screenshots/product_grid.png) | ![Product List](screenshots/product_list.png) | ![Product Detail](screenshots/product_details.png) | ![Orders](screenshots/orders.png) |
 
-| Cart (filled) | Cart (empty) |
-|:---:|:---:|
-| ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) |
+| Cart | Cart (empty) | Wishlist |
+|:---:|:---:|:---:|
+| ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) | ![Wishlist](screenshots/wishlist.png) |
 
 **Tablet**
 | Home | Login | Register | Forgot | Profile |

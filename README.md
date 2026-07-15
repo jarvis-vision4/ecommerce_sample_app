@@ -12,13 +12,13 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/wishlist.png) | ![Profile](screenshots/profile.png) |
 
-| Login | Register | Forgot Password | Reset Sent | Notifications |
-|:---:|:---:|:---:|:---:|:---:|
-| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) 
+| Login | Register | Forgot Password | Reset Sent |
+|:---:|:---:|:---:|:---:|
+| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) |
 
-| Settings | Addresses | Edit Profile |
-|:---:|:---:|:---:|
-| ![Settings](screenshots/settings.png) | ![Addresses](screenshots/address.png) | ![Edit Profile](screenshots/edit.png) |
+| Settings | Addresses | Edit Profile | Notifications |
+|:---:|:---:|:---:|:---:|
+| ![Settings](screenshots/settings.png) | ![Addresses](screenshots/address.png) | ![Edit Profile](screenshots/edit.png) | ![Notifications](screenshots/notification.png) |
 
 | Product Grid | Product List | Product Detail | Orders |
 |:---:|:---:|:---:|:---:|
@@ -26,7 +26,7 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 
 | Cart (filled) | Cart (empty) |
 |:---:|:---:|
-| ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) | ![Notifications](screenshots/notification.png) |
+| ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) |
 
 **Tablet**
 | Home | Login | Register | Forgot | Profile |

@@ -105,7 +105,7 @@ class _VerifyEmailPageState extends ConsumerState<VerifyEmailPage> {
               ).animate().fadeIn(duration: 600.ms, delay: 600.ms).slideY(begin: 0.2),
               SizedBox(height: customSpacing.md),
               SecondaryButton(
-                label: 'I\'ve Verified - Continue',
+                label: '- Continue',
                 onPressed: _verifyEmail,
                 size: ButtonSize.lg,
                 leadingIcon: Icons.check_circle_outline,

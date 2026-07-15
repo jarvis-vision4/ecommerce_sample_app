@@ -66,7 +66,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                 SizedBox(height: customSpacing.lg),
                 // Title
                 Text(
-                  'Welcome Back',
+                  'Sample App',
                   style: theme.textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.w700,
                   ),
@@ -175,7 +175,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                     ),
                   ],
                 ).animate().fadeIn(duration: 600.ms, delay: 1000.ms).slideY(begin: 0.2),
-                SizedBox(height: customSpacing.xxl),
+                SizedBox(height: customSpacing.xl),
                 // Sign up link
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

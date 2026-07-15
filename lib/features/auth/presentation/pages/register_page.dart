@@ -162,9 +162,9 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
                   obscureText: _obscureConfirmPassword,
                   textInputAction: TextInputAction.done,
                   prefixIcon: const Icon(Icons.lock_outline),
-                  suffixIcon: IconButton(
-                    icon: Icon(_obscureConfirmPassword ? Icons.visibility_off : Icons.visibility),
-                    onPressed: () => setState(() => _obscureConfirmPassword = !_obscureConfirmPassword),
+                  suffixIcon: InkWell(
+                     child:  Icon(_obscureConfirmPassword ? Icons.visibility_off : Icons.visibility),
+                      onTap: () => setState(() => _obscureConfirmPassword = !_obscureConfirmPassword)
                   ),
                   validator: (value) {
                     if (value != _passwordController.text) return 'Passwords do not match';
@@ -233,7 +233,7 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
                     Expanded(child: SecondaryButton(label: 'Apple', leadingIcon: Icons.apple, onPressed: () {}, size: ButtonSize.md)),
                   ],
                 ).animate().fadeIn(duration: 600.ms, delay: 1200.ms).slideY(begin: 0.2),
-                SizedBox(height: customSpacing.xxl),
+                SizedBox(height: customSpacing.xl),
                 // Login link
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

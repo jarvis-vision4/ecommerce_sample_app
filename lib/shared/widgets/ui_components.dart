@@ -70,7 +70,7 @@ class PrimaryButton extends StatelessWidget {
 
     return SizedBox(
       width: isFullWidth ? double.infinity : null,
-      height:64,
+      height:65.9,
       child: FilledButton(
         onPressed: isLoading ? null : onPressed,
         style: ButtonStyle(
@@ -212,6 +212,7 @@ class SecondaryButton extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
             if (leadingIcon != null) ...[
               Icon(leadingIcon, size: fontSize * 1.2),
@@ -224,6 +225,7 @@ class SecondaryButton extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: textColor ?? colorScheme.primary
               ),
+
 
             ),
             if (trailingIcon != null) ...[

@@ -12,6 +12,10 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/wishlist.png) | ![Profile](screenshots/profile.png) |
 
+| Login | Register | Forgot Password | Reset Sent |
+|:---:|:---:|:---:|:---:|
+| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) |
+
 | Settings | Addresses | Edit Profile |
 |:---:|:---:|:---:|
 | ![Settings](screenshots/settings.png) | ![Addresses](screenshots/address.png) | ![Edit Profile](screenshots/edit.png) |

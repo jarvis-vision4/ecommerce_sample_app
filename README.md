@@ -16,9 +16,13 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|
 | ![Settings](screenshots/settings.png) | ![Addresses](screenshots/address.png) | ![Edit Profile](screenshots/edit.png) |
 
-| Product Grid | Product List |
+| Product Grid | Product List | Orders |
+|:---:|:---:|:---:|
+| ![Product Grid](screenshots/product_grid.png) | ![Product List](screenshots/product_list.png) | ![Orders](screenshots/orders.png) |
+
+| Cart (filled) | Cart (empty) |
 |:---:|:---:|
-| ![Product Grid](screenshots/product_grid.png) | ![Product List](screenshots/product_list.png) |
+| ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) |
 
 ---
 

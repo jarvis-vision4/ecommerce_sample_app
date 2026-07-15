@@ -12,9 +12,9 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|:---:|:---:|
 | ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Wishlist](screenshots/wishlist.png) | ![Profile](screenshots/profile.png) |
 
-| Login | Register | Forgot Password | Reset Sent |
-|:---:|:---:|:---:|:---:|
-| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) |
+| Login | Register | Forgot Password | Reset Sent | Notifications |
+|:---:|:---:|:---:|:---:|:---:|
+| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) | ![Forgot](screenshots/forgot.png) | ![Reset Sent](screenshots/forgot_sent.png) | ![Notifications](screenshots/notification.png) |
 
 | Settings | Addresses | Edit Profile |
 |:---:|:---:|:---:|
@@ -29,9 +29,13 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 | ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) |
 
 **Tablet**
-| Home | Product Grid | Product List | Product Detail |
-|:---:|:---:|:---:|:---:|
-| ![Home Tablet](screenshots/home_tablet.png) | ![Grid Tablet](screenshots/product_grid_tablet.png) | ![List Tablet](screenshots/product_list_tablet.png) | ![Detail Tablet](screenshots/product_detail_tablet.png) |
+| Home | Login | Register | Forgot | Profile |
+|:---:|:---:|:---:|:---:|:---:|
+| ![Home Tablet](screenshots/home_tablet.png) | ![Login Tablet](screenshots/login_tablet.png) | ![Register Tablet](screenshots/register_tablet.png) | ![Forgot Tablet](screenshots/forgot_tablet.png) | ![Profile Tablet](screenshots/profile_tablet.png) |
+
+| Product Grid | Product List | Product Detail | Wishlist | Edit Profile |
+|:---:|:---:|:---:|:---:|:---:|
+| ![Grid Tablet](screenshots/product_grid_tablet.png) | ![List Tablet](screenshots/product_list_tablet.png) | ![Detail Tablet](screenshots/product_detail_tablet.png) | ![Wishlist Tablet](screenshots/wishlist_tablet.png) | ![Edit Tablet](screenshots/edit_profile_tablet.png) |
 
 | Cart (filled) | Cart (empty) | Orders |
 |:---:|:---:|:---:|

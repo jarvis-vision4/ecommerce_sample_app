@@ -339,8 +339,8 @@ All notifiers return **mock data** with realistic delays (300-800ms) for demonst
 ---
 
 ## Next Steps / Production Readiness
-
-1. **Replace mock data** in notifiers (`core_providers.dart`) with real API calls through `ApiClient`
+(Have Still Developing parts)
+1. **Replace mock data** in notifiers (`core_providers.dart`) with real API calls through `ApiClient` 
 2. **Add auth redirect** in `app_router.dart` using `isLoggedInProvider`
 3. **Generate platform dirs**: `flutter create . --platforms=android,ios,web`
 4. **Run build_runner** for code generation: `dart run build_runner build`

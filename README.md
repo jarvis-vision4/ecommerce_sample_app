@@ -214,7 +214,7 @@ Padding(
 ## API Client
 
 ### Base Configuration
-- **Base URL**: Defaults to `https://api-dev.example.com/v1` (dev)
+- **Base URL**: Defaults to `https://ecommerceship_fast.api` (dev) (still developing not real api)
 - **Timeouts**: 30s connect, 30s receive, 30s send
 - **Interceptors**: Auth (Bearer token), Logging (debug), Error Handling, Retry (3x max)
 

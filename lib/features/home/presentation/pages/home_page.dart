@@ -71,24 +71,68 @@ class HomePage extends ConsumerWidget {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 130,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  padding: EdgeInsets.symmetric(horizontal: customSpacing.lg),
-                  itemCount: featuredCategories.length,
-                  separatorBuilder: (_, __) => SizedBox(width: customSpacing.md),
-                  itemBuilder: (context, index) {
-                    final cat = featuredCategories[index];
-                    return _CategoryCard(
-                      name: cat['name'] as String,
-                      icon: cat['icon'] as IconData,
-                      color: cat['color'] as Color,
-                      count: cat['count'] as int,
-                      onTap: () => context.push('/products?category=${cat['name']}'),
-                    ).animate().fadeIn(duration: 400.ms, delay: (100 * index).ms).slideX(begin: 0.2);
-                  },
-                ),
+              // SizedBox(
+              //   height: 130,
+              //   child: ListView.separated(
+              //     scrollDirection: Axis.horizontal,
+              //     padding: EdgeInsets.symmetric(horizontal: customSpacing.lg),
+              //     itemCount: featuredCategories.length,
+              //     separatorBuilder: (_, __) => SizedBox(width: customSpacing.md),
+              //     itemBuilder: (context, index) {
+              //       final cat = featuredCategories[index];
+              //       return _CategoryCard(
+              //         name: cat['name'] as String,
+              //         icon: cat['icon'] as IconData,
+              //         color: cat['color'] as Color,
+              //         count: cat['count'] as int,
+              //         onTap: () => context.push('/products?category=${cat['name']}'),
+              //       ).animate().fadeIn(duration: 400.ms, delay: (100 * index).ms).slideX(begin: 0.2);
+              //     },
+              //   ),
+              // ),
+              LayoutBuilder(
+                builder: (context, constraints) {
+                  final isTablet = constraints.maxWidth >= 600;
+
+                  final cardHeight = isTablet ? 160.0 : 130.0;
+                  final cardWidth = isTablet ? 150.0 : 120.0;
+
+                  return SizedBox(
+                    height: cardHeight,
+                    child: ListView.separated(
+                      scrollDirection: Axis.horizontal,
+                      padding: EdgeInsets.symmetric(
+                        horizontal: customSpacing.lg,
+                      ),
+                      itemCount: featuredCategories.length,
+                      separatorBuilder: (_, __) => SizedBox(
+                        width: customSpacing.md,
+                      ),
+                      itemBuilder: (context, index) {
+                        final cat = featuredCategories[index];
+
+                        return SizedBox(
+                          width: cardWidth,
+                          child: _CategoryCard(
+                            name: cat['name'] as String,
+                            icon: cat['icon'] as IconData,
+                            color: cat['color'] as Color,
+                            count: cat['count'] as int,
+                            onTap: () => context.push(
+                              '/products?category=${cat['name']}',
+                            ),
+                          ),
+                        )
+                            .animate()
+                            .fadeIn(
+                          duration: 400.ms,
+                          delay: (100 * index).ms,
+                        )
+                            .slideX(begin: 0.2);
+                      },
+                    ),
+                  );
+                },
               ),
               SizedBox(height: customSpacing.xl),
             ],

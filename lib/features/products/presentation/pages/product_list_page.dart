@@ -183,7 +183,7 @@ class _FilterBar extends StatelessWidget {
         color: theme.colorScheme.surface,
         border: Border(
             bottom: BorderSide(
-                color: theme.colorScheme.outlineVariant.withOpacity(0.5))),
+                color: theme.colorScheme.outlineVariant.withValues(alpha: 0.5))),
       ),
       child: Row(
         children: [

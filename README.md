@@ -28,6 +28,15 @@ Enterprise e-commerce Flutter app using **Riverpod** state management, **GoRoute
 |:---:|:---:|
 | ![Cart](screenshots/shopping_cart.png) | ![Cart Empty](screenshots/shopping_cart_empty.png) |
 
+**Tablet**
+| Home | Product Grid | Product List | Product Detail |
+|:---:|:---:|:---:|:---:|
+| ![Home Tablet](screenshots/home_tablet.png) | ![Grid Tablet](screenshots/product_grid_tablet.png) | ![List Tablet](screenshots/product_list_tablet.png) | ![Detail Tablet](screenshots/product_detail_tablet.png) |
+
+| Cart (filled) | Cart (empty) | Orders |
+|:---:|:---:|:---:|
+| ![Cart Tablet](screenshots/cart_tablet.png) | ![Cart Empty Tablet](screenshots/cart_tablet_empty.png) | ![Orders Tablet](screenshots/order_tablet.png) |
+
 ---
 
 ## Architecture
